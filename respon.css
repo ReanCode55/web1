@@ -1,0 +1,671 @@
+@media (min-width: 320px) and (max-width: 480px){
+    .contact{
+        display: none !important;
+    }
+    header .main-box .btn{
+        display: none !important;
+    }
+    header .main-box .open-menu{
+        display: block !important;
+    }
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 10px;
+    }
+    header .main-box{
+        padding: 0px;
+    }
+    header .main-box .logo{
+        width: 150px;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        z-index: 200;
+        background-color: #166534 !important;
+        overflow-x: hidden;
+        transition: 0.3s;
+    }
+    nav .menu .close-menu{
+        display: block !important;
+    }
+    nav .menu ul{
+        padding-top: 50px;
+    }
+    nav .menu ul li{
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .text-animation .main-box marquee{
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    .blog-1{
+        width: 100%;
+        padding: 0px !important;
+        margin-top: -10px !important;
+    }
+    .blog-1 .main-box{
+        display: inline-block;
+        width: 100%;
+    }
+    .blog-1 .main-box .box{
+        width: 20%;
+        float: left;
+    }
+
+    .blog-2{
+        width: 100%;
+        padding: 0px 5px !important;
+        margin-top: -10px !important;
+    }
+    .blog-2 h1{
+        font-size: 15px !important;
+    }
+    .blog-2 .main-box{
+        display: inline-block;
+    }
+    .blog-2 .main-box .col-span-3{
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+    .blog-2 .main-box .col-span-3 .box{
+        padding: 5px;
+    }
+    .blog-2 .main-box .col-span-3 .box p{
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .blog-2 .main-box .col-span-4{
+        width: 33.3%;
+        float: left;
+    }
+    .blog-2 .main-box .col-span-4 .box{
+        padding: 5px;
+    }
+    .about-online-slot h1{
+        text-align: center;
+        font-size: 23px !important;
+    }
+    .about-online-slot p{
+        text-align: center;
+        font-size: 14px !important;
+    }
+
+
+    .text-1{
+        width: 100%;
+        padding: 0px !important;
+    }
+    .text-1 h1{
+        font-size: 15px;
+        text-align: center;
+    }
+    .text-1 p{
+        font-size: 13px;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+    .blog-3{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .blog-3 h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .blog-3 p{
+        font-size: 12px;
+        padding: 0px;
+        text-align: center;
+    }
+    .blog-3 .main-box{
+        display: inline-block;
+    }
+    .blog-3 .main-box .col-span-2{
+        width: 33.3%;
+        padding: 5px;
+        float: left;
+    }
+    .blog-3 .main-box .col-span-2 .box .text{
+        font-size: 15px;
+        padding: 5px !important;
+        color: #000000;
+    }
+
+
+    .text-2{
+        width: 100%;
+        padding: 0px !important;
+    }
+    .text-2 h1{
+        font-size: 15px;
+        text-align: center;
+    }
+    .text-2 p{
+        font-size: 13px;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+    .blog-4{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .blog-4 .btn-title{
+        width: 50%;
+        margin: auto;
+    }
+
+
+    footer{
+        width: 100%;
+        padding: 10px !important;
+    }
+    footer .main-box{
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 90px;
+    }
+    footer .main-box .col-span-4{
+        width: 100%;
+    }
+    footer .main-box .col-span-4 .logo{
+        width: 50%;
+        margin: auto;
+    }
+    footer .main-box .col-span-4 .text p{
+        font-size: 15px;
+    }
+    footer .main-box .col-span-4 .bank{
+        margin: 0px !important;
+        padding-bottom: 10px;
+    }
+    footer .main-box .col-span-4 .bank .box img{
+        width: 60%;
+    }
+
+    .bottom-menu-mobile{
+        display: flex !important;
+    }
+    .blog-2 h1,
+    .about-baccarat h1,
+    .about-online-slot h1{
+        font-size: 15px;
+        padding: 0px !important;
+        text-align: center;
+    }
+    .about-baccarat,
+    .about-online-slot{
+        padding: 10px;
+        width: 100%;
+    }
+    .about-baccarat p{
+        font-size: 13px;
+        text-align: center;
+        padding: 0px !important;
+    }
+    .about-baccarat .main-box{
+        display: inline-block;
+    }
+    .about-baccarat .main-box .col-span-3,
+    .about-baccarat .main-box .col-span-9{
+        width: 100%;
+    }
+    .about-baccarat .main-box .col-span-3 .box{
+        width: 80%;
+        margin: auto;
+    }
+    .about-baccarat .main-box .col-span-9 .box h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-football h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-football p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .text-football .text-link{
+        font-size: 18px;
+    }
+    .article{
+        width: 100%;
+        padding: 10px;
+    }
+    .article h1{
+        padding: 0px;
+        text-align: center;
+    }
+    .article .main-box{
+        display: inline-block;
+    }
+    .article .main-box .col-span-9{
+        padding: 10px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    .contact{
+        display: none !important;
+    }
+    header .main-box .btn{
+        display: none !important;
+    }
+    header .main-box .open-menu{
+        display: block !important;
+    }
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 10px;
+    }
+    header .main-box{
+        padding: 0px;
+    }
+    header .main-box .logo{
+        width: 170px;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        z-index: 200;
+        background-color: #166534 !important;
+        overflow-x: hidden;
+        transition: 0.3s;
+    }
+    nav .menu .close-menu{
+        display: block !important;
+    }
+    nav .menu ul{
+        padding-top: 50px;
+    }
+    nav .menu ul li{
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .text-animation .main-box marquee{
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    .blog-1{
+        width: 100%;
+        padding: 0px !important;
+        margin-top: -10px !important;
+    }
+    .blog-1 .main-box{
+        display: inline-block;
+        width: 100%;
+    }
+    .blog-1 .main-box .box{
+        width: 20%;
+        float: left;
+    }
+
+
+    .blog-2{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .blog-2 .main-box{
+        display: inline-block;
+    }
+    .blog-2 .main-box .col-span-3{
+        width: 33.3%;
+        float: left;
+        padding: 5px;
+    }
+    .blog-2 .main-box .col-span-3 .box p{
+        font-size: 12px;
+        padding: 0px;
+        text-align: center;
+    }
+    .blog-2 .main-box .col-span-4{
+        width: 33.3%;
+        float: left;
+    }
+    .blog-2 .main-box .col-span-4 .box{
+        padding: 5px;
+    }
+
+
+    .text-1{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .text-1 h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-1 p{
+        font-size: 12px;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+    .blog-3{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .blog-3 h1{
+        font-size: 20px;
+    }
+    .blog-3 p{
+        font-size: 12px;
+        padding: 0px;
+    }
+    .blog-3 .main-box{
+        display: inline-block;
+    }
+    .blog-3 .main-box .col-span-2{
+        width: 25%;
+        padding: 5px;
+        float: left;
+    }
+    .blog-3 .main-box .col-span-2 .box .text{
+        font-size: 15px;
+        padding: 5px !important;
+        color: #000000;
+    }
+
+
+    .text-2{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .text-2 h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-2 p{
+        font-size: 12px;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+    .blog-4{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .blog-4 .btn-title{
+        width: 40%;
+        margin: auto;
+    }
+
+
+    .blog-5{
+        width: 100%;
+        padding: 10px !important;
+        margin-top: -30px !important;
+    }
+    .blog-5 .btn-title{
+        width: 40%;
+        margin: auto;
+    }
+
+
+    footer{
+        width: 100%;
+        padding: 10px !important;
+    }
+    footer .main-box{
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 90px;
+    }
+    footer .main-box .col-span-4{
+        width: 100%;
+    }
+    footer .main-box .col-span-4 .logo{
+        width: 50%;
+        margin: auto;
+    }
+    footer .main-box .col-span-4 .text p{
+        font-size: 15px;
+    }
+    footer .main-box .col-span-4 .bank{
+        margin: 0px !important;
+        padding-bottom: 10px;
+    }
+    footer .main-box .col-span-4 .bank .box img{
+        width: 60%;
+    }
+
+    .bottom-menu-mobile{
+        display: flex !important;
+    }
+
+
+    .blog-2 h1,
+    .about-baccarat h1,
+    .about-online-slot h1{
+        font-size: 25px;
+        padding: 0px;
+        text-align: center;
+    }
+    .about-baccarat,
+    .about-online-slot{
+        padding: 10px;
+        width: 100%;
+    }
+    .about-baccarat p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .about-baccarat .main-box{
+        display: inline-block;
+    }
+    .about-baccarat .main-box .col-span-3,
+    .about-baccarat .main-box .col-span-9{
+        width: 100%;
+    }
+    .about-baccarat .main-box .col-span-3 .box{
+        width: 60%;
+        margin: auto;
+    }
+    .about-baccarat .main-box .col-span-9 .box h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-football h1,
+    .text-football .text-link{
+        font-size: 22px;
+        text-align: center;
+    }
+    .text-football p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .article{
+        width: 100%;
+        padding: 10px;
+    }
+    .article h1{
+        padding: 0px;
+        text-align: center;
+    }
+    .article{
+        display: inline-block;
+    }
+    .article .main-box{
+        width: 50%;
+        float: left;
+        display: block;
+        background: none;
+        padding: 0px;
+        box-shadow: none;
+    }
+    .article .main-box .col-span-3{
+        width: 95%;
+        margin: auto;
+        background-color: #fff;
+    }
+    .article .main-box .col-span-9{
+        padding: 10px;
+        width: 95%;
+        margin: auto;
+        background-color: #fff;
+        height: 600px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    nav .menu ul li a{
+        padding: 10px;
+    }
+
+    .text-animation .main-box marquee{
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    .blog-1{
+        width: 100%;
+        padding: 0px !important;
+        margin-top: -10px !important;
+    }
+    .blog-2{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .blog-2 .main-box{
+        display: inline-block;
+    }
+    .blog-2 .main-box .col-span-3{
+        width: 20%;
+        float: left;
+        padding: 5px;
+    }
+    .blog-2 .main-box .col-span-3 .box p{
+        font-size: 12px;
+        padding: 0px;
+    }
+
+
+    .text-1{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .text-1 h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-1 p{
+        font-size: 12px;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+    .blog-3{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .blog-3 h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .blog-3 p{
+        font-size: 12px;
+        padding: 0px;
+        text-align: center;
+    }
+    .blog-3 .main-box{
+        display: inline-block;
+    }
+    .blog-3 .main-box .col-span-2{
+        width: 20%;
+        padding: 5px;
+        float: left;
+    }
+
+    .blog-2 .main-box .col-span-4{
+        width: 33.3%;
+        float: left;
+    }
+    .blog-2 .main-box .col-span-4 .box{
+        padding: 5px;
+    }
+
+
+    .text-2{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .text-2 h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-2 p{
+        font-size: 12px;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+    .blog-4{
+        width: 100%;
+        padding: 10px !important;
+    }
+    .blog-4 .btn-title{
+        width: 40%;
+        margin: auto;
+    }
+
+    .blog-5{
+        width: 100%;
+        padding: 10px !important;
+        margin-top: -30px !important;
+    }
+    .blog-5 .btn-title{
+        width: 40%;
+        margin: auto;
+    }
+
+    footer{
+        width: 100%;
+        padding: 10px !important;
+    }
+    footer .main-box{
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 90px;
+    }
+    footer .main-box .col-span-4{
+        width: 100%;
+    }
+    footer .main-box .col-span-4 .logo{
+        width: 50%;
+        margin: auto;
+    }
+    footer .main-box .col-span-4 .text p{
+        font-size: 15px;
+    }
+    footer .main-box .col-span-4 .bank{
+        margin: 0px !important;
+        padding-bottom: 10px;
+    }
+    footer .main-box .col-span-4 .bank .box img{
+        width: 60%;
+    }
+}

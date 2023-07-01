@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        css link
+    -->
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./respon.css">
+    <!-- 
+    cdn link    
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <title>AIA89</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="main">
+        <!-- 
+            bottom menu mobile
+        -->
+        
+        <div class="bottom-menu-mobile hidden z-20 w-full fixed bottom-0 left-0 bg-green-900 p-2 flex justify-between items-center rounded-t border-t-2 border-yellow-500">
+            <a href="#">
+                <div class="icon">
+                    <img src="./img/icon/user.png" alt="" class="w-8 m-auto">
+                    <p class="text-xs text-center text-white">ចុះឈ្មោះ</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="icon">
+                    <img src="./img/icon/chat.png" alt="" class="w-8 m-auto">
+                    <p class="text-xs text-center text-white">Messenger</p>
+                </div>
+            </a>
+            <a href="./index.html">
+                <div class="icon">
+                    <img src="./img/logo/logo-1024x193.png" alt="" class="w-24">
+                </div>
+            </a>
+            <a href="./promotion.html">
+                <div class="icon">
+                    <img src="./img/icon/gift-box.png" alt="" class="w-8 m-auto">
+                    <p class="text-xs text-center text-white">ប្រូម៉ូសិន</p>
+                </div>
+            </a>
+            <a href="http://t.me/aia89">
+                <div class="icon">
+                    <img src="./img/icon/telegram.png" alt="" class="w-8 m-auto">
+                    <p class="text-xs text-center text-white">Telegram</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- 
+        header
+        -->
+        <header class="bg-green-800 ">
+            <div class="main-box flex justify-between items-center max-w-7xl m-auto">
+                <div class="logo w-48">
+                    <a href="./index.html">
+                        <img src="./img/logo/logo-1024x193.png" alt="" class="w-full">
+                    </a>
+                </div>
+                <div class="btn flex items-center">
+                    <a href="#">
+                        <div class="box max-w-xs relative">
+                            <img src="./img/border/Web-Button.png" alt="" class="w-56">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box max-w-xs relative">
+                            <img src="./img/border/Web-Button (2).png" alt="" class="w-56">
+                        </div>
+                    </a>
+                </div>
+                <div class="open-menu hidden" onclick="openNav();">
+                    <i class="fa fa-bars flex justify-center items-center text-3xl text-green-200"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- 
+            menu
+        -->
+        <nav class="bg-gray-900" id="myNav">
+            <div class="menu max-w-3xl m-auto py-2">
+                <div class="close-menu absolute top-0 hidden" onclick="closeNav();">
+                    <i class="fa fa-times w-12 h-12 bg-green-500 flex justify-center items-center text-3xl text-green-200"></i>
+                </div>
+                <ul>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./index.html">ទំព័រដើម</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./casino.html">កាសុីណូ</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./slots.html">ស្លតម៉ាសុីន</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./sport.html">កីឡា</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./cock-fight.html">មាន់ជល់</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./promotion.html">ប្រូម៉ូសិន</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="http://t.me/aia89">ទំនាក់ទំនង</a></li>
+                    <!-- <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./article.html">Article</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- 
+            text animation
+        -->
+        <div class="text-animation bg-green-900">
+            <div class="main-box max-w-7xl m-auto">
+                <marquee behavior="right" direction="#" class="w-full text-white py-2 text-lg">AIA89 ផ្តល់ជូន បាការ៉ាត់ ស្លុតអនឡាញ កីឡា ភ្នាល់បាល់ទាត់ លេងហ្គេមអនឡាញ ហ្គេមភ្នាល់តាមគេហទំព័រ 24 ម៉ោងក្នុងមួយថ្ងៃ។</marquee>
+            </div>
+        </div>
+
+        <!-- 
+            slide
+        -->
+        <!-- Slider main container -->
+        <div class="slide-progress bg-teal-500 h-2"></div>
+        <div class="owl-carousel">
+            <div class="box w-full">
+                <img src="./img/slide/1.jpg" class="w-full block">
+            </div>
+            <div class="box w-full">
+                <img src="./img/slide/2.jpg" class="w-full block">
+            </div>
+            <div class="box w-full">
+                <img src="./img/slide/9.jpg" class="w-full block">
+            </div>
+            <div class="box w-full">
+                <img src="./img/slide/10.jpg" class="w-full block">
+            </div>
+        </div>
+
+        <div class="blog-1 max-w-7xl m-auto pb-10">
+            <div class="main-box flex justify-between items-center w-full">
+                <div class="box">
+                    <img src="./img/support/Bitmap.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./img/support/Bitmap (1).png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./img/support/Bitmap (2).png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./img/support/Bitmap (3).png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./img/support/Bitmap (4).png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./img/support/Bitmap (5).png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./img/support/Bitmap (6).png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./img/support/Bitmap (7).png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./img/support/Bitmap (8).png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./img/support/Bitmap (9).png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-2 max-w-6xl m-auto">
+            <div class="main-box grid grid-cols-12 gap-10">
+                <div class="col-span-4">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./img/blog-1/1.png" alt="" class="w-full rounded">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-4">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./img/blog-1/2.png" alt="" class="w-full rounded">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-4">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./img/blog-1/3.png" alt="" class="w-full rounded">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-1 max-w-7xl m-auto py-5">
+            <h1 class="text-center text-3xl text-white font-bold">AIA89 មជ្ឈមណ្ឌល Baccarat ឈានមុខគេនៅកម្ពុជា</h1>
+            <p class="text-center text-white text-lg py-5">បើកបទពិសោធន៍នៃការភ្នាល់ហ្គេមស្លតពិសេសជាមួយ PGSLOT ដែលជាអ្នកផ្តល់រន្ធដោតលេខ 1 ដែលត្រូវបានធានាជាមួយនឹងសមាជិកសំខាន់ៗសរុបចំនួន 50,000 នាក់ក្នុងមួយថ្ងៃ។ ប្រាក់រង្វាន់ PG SLOT មានភាពងាយស្រួលក្នុងការបំបែក ការដាក់ប្រាក់-ដកប្រាក់យ៉ាងរហ័សជាមួយនឹងប្រព័ន្ធ AUTO សុវត្ថិភាព 100% ភ្លាមៗ ការផ្តល់ឥណទានដោយឥតគិតថ្លៃជារៀងរាល់ថ្ងៃ! ច្រកចូលទៅ PGSLOTAUTO Mobile 2022</p>
+        </div>
+
+        <div class="text-2 max-w-7xl m-auto py-5">
+            <h1 class="text-center text-3xl text-white font-bold">AIA89 Online Slots សម្រាប់ប្រាក់ពិត</h1>
+            <p class=" text-white text-lg py-5">សូមស្វាគមន៍មកកាន់សេវាកម្មហ្គេមតាមអ៊ីនធឺណិត Online Slots ហ្គេមភ្នាល់ថ្មីពីគេហទំព័រហ្គេមស្លតអនឡាញឈានមុខគេ ដែលរួមមានហ្គេមស្លតដែលងាយបំបែកបានជាច្រើន ការអាប់ដេតចុងក្រោយបំផុតឆ្នាំ 2022 ហ្គេមស្លតដែលពេញនិយមបំផុត។ ពីជំរុំហ្គេមស្លតដែលមានគុណភាព ងាយស្រួលលេងតាមរយៈប្រព័ន្ធស្វ័យប្រវត្តិខ្ពស់ អាចលេងហ្គេមស្លតពីជំរុំហ្គេមល្បីៗជាច្រើន 24 ម៉ោងក្នុងមួយថ្ងៃ ហើយអាចទទួលបានប្រូម៉ូសិន រន្ធដោត ក្រេឌីតឥតគិតថ្លៃ និងការផ្សព្វផ្សាយផ្សេងៗទៀត។ ជាមួយនឹងហ្គេមស្លតតាមអ៊ីនធឺណិត</p>
+            <p class=" text-white text-lg py-5">Online Slotsគឺជាហ្គេមដែលពេញនិយមបំផុតសម្រាប់ប្រជាជនថៃ។ ដែល​បាន​បង្កើត​ឡើង​ពី​ម៉ាស៊ីន​ហ្គេម​ស្លុត​ដែល​ជា​ហ្គេម​ភ្នាល់​មួយ​ប្រភេទ​ទៀត​ដែល​មាន​ភាព​ងាយ​ស្រួល​ក្នុង​ការ​លេង ហើយ​ក៏​ជា​ហ្គេម​ដែល​អាច​រក​ប្រាក់​បាន​ច្រើន​ដែរ​ព្រោះ​វា​ត្រូវ​បាន​បង្កើត​ឡើង។ ធ្វើឱ្យហ្គេមគួរឱ្យចាប់អារម្មណ៍ រីករាយក្នុងការលេងជាមួយនឹងភាពសប្បាយរីករាយផ្សេងៗ។ រីករាយជាមួយរន្ធដោតវីដេអូហ្គេម 3D ជាមួយនឹងរង្វាន់បន្ថែម។ Jackpot ជាច្រើនអនុញ្ញាតឱ្យអ្នកលេងពេញមួយថ្ងៃតាមរយៈហ្គេមស្លុតអនឡាញដែលទទួលបានស្តង់ដារអន្តរជាតិ បញ្ចប់នៅលើគេហទំព័រតែមួយគត់ ទំនាក់ទំនងមកយើងខ្ញុំ 24 ម៉ោងក្នុងមួយថ្ងៃ ចុច..!!</p>
+        </div>
+
+        <div class="blog-5 max-w-7xl m-auto">
+            <img src="./img/contact/p7.png" alt="" class="w-full">
+        </div>
+
+        <!-- 
+            footer
+        -->
+        <footer class="bg-green-900">
+            <div class="main-box max-w-7xl m-auto py-2 grid grid-cols-12 gap-10">
+                <div class="col-span-4">
+                    <div class="logo w-56 m-auto">
+                        <a href="#">
+                            <img src="./img/logo/logo-1024x193.png" alt="" class="w-full">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <p class="text-md text-white text-center py-5">គេហទំព័រភ្នាល់អនឡាញ AIA89.com ជា វេបសាយភ្នាល់ហ្គេមអនឡាយល្អដាច់គេ ដែលមានហ្គេមជាច្រើនដូចជា មាន់ជល់ បាល់ទាត់ កីឡា បៀរផ្សាយផ្ទាល់ គីណូ ឡូតូ ខ្លានាគ បាញ់ត្រី ស្លុតម៉ាស៊ីន ត្រៀមខ្លួនរួចជាស្រេចក្នុងការផ្តល់ប្រឹក្សា និងពិគ្រោះយោបល់ 24 ម៉ោងក្នុងមួយថ្ងៃ</p>
+                    </div>
+                </div>
+                <div class="col-span-4">
+                    <div class="bank w-full inline-block mt-5">
+                        <a href="#">
+                            <div class="box w-1/4 float-left rounded">
+                                <img src="./img/bank/aba.png" alt="" class="w-16 m-auto rounded">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box w-1/4 float-left rounded">
+                                <img src="./img/bank/trumoney.png" alt="" class="w-16 m-auto rounded">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box w-1/4 float-left rounded">
+                                <img src="./img/bank/aceleda.png" alt="" class="w-16 m-auto rounded">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box w-1/4 float-left rounded">
+                                <img src="./img/bank/wing.png" alt="" class="w-16 m-auto rounded">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-4">
+                    <a href="#">
+                        <div class="btn-link flex items-center w-64 m-auto bg-blue-600 rounded-full p-3">
+                            <div class="w-full text-center text-4xl text-white">
+                                <i class="fab fa-telegram">&nbsp;</i>
+                                @AIA89
+                            </div>
+                        </div>
+                    </a>
+                    <img src="./img/border/123.png" alt="" class="w-64 m-auto my-5">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 
+        contact us
+    -->
+    <div class="contact w-56 fixed bottom-0 right-0 z-20">
+        <a href="http://t.me/aia89">
+            <img src="./img/contact/contact.png" alt="" class="w-full">
+        </a>
+    </div>
+    <!-- 
+        script link
+    -->
+    <script src="./js.js"></script>
+</body>
+</html>

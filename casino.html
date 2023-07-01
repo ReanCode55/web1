@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        css link
+    -->
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./respon.css">
+    <!-- 
+    cdn link    
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <title>AIA89</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="main">
+        <!-- 
+            bottom menu mobile
+        -->
+        <div class="bottom-menu-mobile hidden z-20 w-full fixed bottom-0 left-0 bg-green-900 p-2 flex justify-between items-center rounded-t border-t-2 border-yellow-500">
+            <a href="#">
+                <div class="icon">
+                    <img src="./img/icon/user.png" alt="" class="w-8 m-auto">
+                    <p class="text-xs text-center text-white">ចុះឈ្មោះ</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="icon">
+                    <img src="./img/icon/chat.png" alt="" class="w-8 m-auto">
+                    <p class="text-xs text-center text-white">Messenger</p>
+                </div>
+            </a>
+            <a href="./index.html">
+                <div class="icon">
+                    <img src="./img/logo/logo-1024x193.png" alt="" class="w-24">
+                </div>
+            </a>
+            <a href="./promotion.html">
+                <div class="icon">
+                    <img src="./img/icon/gift-box.png" alt="" class="w-8 m-auto">
+                    <p class="text-xs text-center text-white">ប្រូម៉ូសិន</p>
+                </div>
+            </a>
+            <a href="http://t.me/aia89">
+                <div class="icon">
+                    <img src="./img/icon/telegram.png" alt="" class="w-8 m-auto">
+                    <p class="text-xs text-center text-white">Telegram</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- 
+        header
+        -->
+        <header class="bg-green-800 ">
+            <div class="main-box flex justify-between items-center max-w-7xl m-auto">
+                <div class="logo w-48">
+                    <a href="./index.html">
+                        <img src="./img/logo/logo-1024x193.png" alt="" class="w-full">
+                    </a>
+                </div>
+                <div class="btn flex items-center">
+                    <a href="#">
+                        <div class="box max-w-xs relative">
+                            <img src="./img/border/Web-Button.png" alt="" class="w-56">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box max-w-xs relative">
+                            <img src="./img/border/Web-Button (2).png" alt="" class="w-56">
+                        </div>
+                    </a>
+                </div>
+                <div class="open-menu hidden" onclick="openNav();">
+                    <i class="fa fa-bars flex justify-center items-center text-3xl text-green-200"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- 
+            menu
+        -->
+        <nav class="bg-gray-900" id="myNav">
+            <div class="menu max-w-3xl m-auto py-2">
+                <div class="close-menu absolute top-0 hidden" onclick="closeNav();">
+                    <i class="fa fa-times w-12 h-12 bg-green-500 flex justify-center items-center text-3xl text-green-200"></i>
+                </div>
+                <ul>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./index.html">ទំព័រដើម</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./casino.html">កាសុីណូ</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./slots.html">ស្លតម៉ាសុីន</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./sport.html">កីឡា</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./cock-fight.html">មាន់ជល់</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./promotion.html">ប្រូម៉ូសិន</a></li>
+                    <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="http://t.me/aia89">ទំនាក់ទំនង</a></li>
+                    <!-- <li class="inline-block"><a class="block px-4 py-2 text-white font-bold hover:bg-green-800 rounded transition-all" href="./article.html">Article</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- 
+            text animation
+        -->
+        <div class="text-animation bg-green-900">
+            <div class="main-box max-w-7xl m-auto">
+                <marquee behavior="right" direction="#" class="w-full text-white py-2 text-lg">AIA89 ផ្តល់ជូន បាការ៉ាត់ ស្លុតអនឡាញ កីឡា ភ្នាល់បាល់ទាត់ លេងហ្គេមអនឡាញ ហ្គេមភ្នាល់តាមគេហទំព័រ 24 ម៉ោងក្នុងមួយថ្ងៃ។</marquee>
+            </div>
+        </div>
+
+        <!-- 
+            slide
+        -->
+        <!-- Slider main container -->
+        <div class="slide-progress bg-teal-500 h-2"></div>
+        <div class="owl-carousel">
+            <div class="box w-full">
+                <img src="./img/slide/1.jpg" class="w-full block">
+            </div>
+            <div class="box w-full">
+                <img src="./img/slide/2.jpg" class="w-full block">
+            </div>
+            <div class="box w-full">
+                <img src="./img/slide/9.jpg" class="w-full block">
+            </div>
+            <div class="box w-full">
+                <img src="./img/slide/10.jpg" class="w-full block">
+            </div>
+        </div>
+
+        <!-- 
+            blog-2
+        -->
+        <div class="blog-2 max-w-7xl m-auto">
+            <h1 class="text-center text-3xl text-white font-bold pb-5">ហ្គេម Baccarat អនឡាញដ៏ពេញនិយម</h1>
+            <div class="main-box grid grid-cols-12 gap-5">
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/1.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">Sexy Game</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/2.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">SA Gaming</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/3.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">Pragamtic Play</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/4.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">D88 Green-Dragon</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/5.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">Dream Gaming</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/6.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">E-Bet</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/7.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">Big Gaming</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/8.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">Bet Game</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/9.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">ATOM Gaming</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/10.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">Asia Gaming</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-span-3">
+                    <a href="#">
+                        <div class="box w-full rounded">
+                            <img src="./anima/11.webp" alt="" class="w-full rounded">
+                            <p class="text-white text-center py-2 w-full text-lg font-bold">All Bet</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 
+            about baccarat
+        -->
+        <div class="about-baccarat max-w-7xl m-auto">
+            <h1 class="text-center text-3xl text-white font-bold py-10">Baccarat អនឡាញ</h1>
+            <p class="text-white text-lg py-5">Baccarat Online (អាន 2 នាទី លេងភ្លាម) Baccarat ជាល្បែងបៀ។ នោះ​គឺ​ជា​ការ​ងាយ​ស្រួល​ក្នុង​ការ​លេង​នៅ​ក្នុង​លក្ខខណ្ឌ​នៃ​របៀប​លេង​។ នៅក្នុងកាស៊ីណូឈានមុខគេរបស់ពិភពលោក Baccarat ត្រូវបានចាត់ទុកថាជាហ្គេមបៀមួយ។ ក្នុងការភ្នាល់បាការ៉ាតបុរាណ មាន 3 ប្រភេទ ឈ្នះ ចាញ់ ចាញ់ គឺ អ្នកលេងឈ្នះ (អ្នកលេង) ឬ អ្នកភ្នាល់ឈ្នះ (អ្នកភ្នាល់) និងស្មើ។ នាពេលបច្ចុប្បន្ននេះ ប្រព័ន្ធអ៊ីនធឺណែតមានល្បឿនកាន់តែខ្ពស់ ដូច្នេះការនាំយក Baccart មក But ក្នុងកាស៊ីណូ ដើម្បីធ្វើវេទិកា Baccarat តាមអនឡាញ AIA89 មានដៃគូជាច្រើននៅក្នុងហ្គេម Baccarat វាអាស្រ័យលើអ្នកក្នុងការជ្រើសរើសនៅក្នុងហ្គេម Baccarat។ ក្រៅ​ពី​ការ​ប្រើ​ប្រាស់​សំណាង​របស់​អ្នក​ជា​គោល​ ប៉ុន្តែ​យើង​គួរ​តែ​ដឹង​ពី​ច្បាប់​ដើម្បី​បង្កើត​ភាព​ពិការ​ និង​គុណសម្បត្តិ​សម្រាប់​ខ្លួន​ឯង</p>
+            <div class="main-box grid grid-cols-12 gap-10">
+                <div class="col-span-3">
+                    <div class="box">
+                        <img src="./img/baccarat img/1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-span-9">
+                    <div class="box">
+                        <h1 class="text-3xl text-yellow-500 font-bold">របៀបលេង Baccarat អនឡាញ</h1>
+                        <p class="text-white text-lg py-5">
+                            • PLAYER គឺជាភាគីរបស់អ្នកលេង <br>
+                            • BANKER គឺជាធនាគារិក <br>
+                            • TIE GAME គឺជាអ្នកលេង និងភាគីខាងធនាគារ ពិន្ទុត្រូវបានចង <br>
+                            • PLAYER PAIR គឺជាការភ្នាល់នៅខាងអ្នកលេងដើម្បីចេញសន្លឹកបៀមួយគូ ឬមុខដូចគ្នាក្នុង 2 សន្លឹកដំបូង <br>
+                            • BANKER PAIR គឺជាការភ្នាល់ អ្នកចែកបៀនឹងចេញសន្លឹកបៀមួយគូ ឬមុខដែលដូចគ្នាក្នុង 2 សន្លឹកដំបូង។ នេះ។ <br>
+                            សន្លឹកបៀនឹងត្រូវបានចែកទៅភាគីពីរគឺ PLAYER និង BANKER ។ ចូរយើងទាយថាភាគីណាមានពិន្ទុច្រើនជាង។ សន្លឹកបៀដែលត្រូវបានបូកបញ្ចូលគ្នាស្មើ 9 ត្រូវបានចាត់ទុកថាជាពិន្ទុខ្ពស់បំផុតនៅក្នុងហ្គេម។
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-3xl text-yellow-500 font-bold py-5">របៀបរាប់ពិន្ទុ Baccarat</h1>
+            <p class="text-white text-lg pb-5">
+                Baccarat ពិន្ទុគាត់ត្រូវបានរៀបចំពី A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2 ដែលលេខ K, Q, J, 10 = 0, A = 1 ការរាប់សន្លឹកបៀរាប់តែ 2, 3, 4, 5, 6, 7, 8, 9។ 
+                សន្មត់ថាមានសន្លឹកបៀ 3 នៅក្នុងដៃ 9/3/2 រៀងគ្នា ពិន្ទុកាតសរុបនឹងមាន 9+3+2 = 14 ប៉ុន្តែយោងទៅតាមច្បាប់ យើងរាប់ត្រឹមតែ 4 ប៉ុណ្ណោះ។ នោះគឺប្រសិនបើបន្ទាប់ពី 10 យើងចាប់ផ្តើមរាប់ពិន្ទុថ្មីនៅក្នុងប្រព័ន្ធអនឡាញ។ យើងក៏រាប់ពិន្ទុដូចនេះដែរ។
+            </p>
+            <h1 class="text-3xl text-yellow-500 font-bold py-5">ក្នុងករណីស្នើសុំកាតចំនួនបី</h1>
+            <p class="text-white text-lg pb-5">
+                ករណីភាគីអ្នកលេង (អ្នកលេង) កោះហៅកាតទីបី។<br>
+                &emsp;• ប្រសិនបើពិន្ទុសរុបស្មើ 1-2-3-4-5-0 សន្លឹកបៀទី 3 អាចត្រូវបានលើកឡើង។<br>
+                &emsp;• ប្រសិនបើពិន្ទុគឺ 6-7 មិនចាំបាច់ហៅបន្ថែមទៀតទេ។<br>
+                &emsp;• ប្រសិនបើពិន្ទុគឺ 8-9 មិនចាំបាច់ហៅបន្ថែមទៀតទេ។<br><br>
+                ក្នុងករណីធនាគារិក (BANKER) កោះហៅកាតទីបី។<br>
+                &emsp;• Banker ទទួលបាន 6 ពិន្ទុ អ្នកលេងទទួលបាន 6/7 ពិន្ទុ Banker អាចហៅកាតបានច្រើន។<br>
+                &emsp;• អ្នកចែកបៀទទួលបាន 5 ពិន្ទុ អ្នកលេងទទួលបាន 4-5-6-7 អោយអ្នកចែកបៀហៅកាតបន្ថែមទៀត។ ដោយសារតែអ្នកចែកបៀត្រូវតែឈ្នះយ៉ាងហោចណាស់ 2 ពិន្ទុ (យោងទៅតាមច្បាប់) លុះត្រាតែអ្នកលេងមាន 8 ឬ 9 <br>
+                &emsp;• អ្នកចែកបៀទទួលបាន 4 ពិន្ទុ អ្នកលេងទទួលបាន 2-3-4-5-6-7 អោយអ្នកចែកបៀហៅកាតបន្ថែមទៀត។ ត្រូវតែឈ្នះយ៉ាងហោចណាស់ 2 ពិន្ទុ (យោងទៅតាមច្បាប់) <br>
+                &emsp;• អ្នកចែកបៀទទួលបាន 3 ពិន្ទុ ខណៈពេលដែលអ្នកលេងទទួលបាន 1-2-3-4-5-6-7-8-9-0 អនុញ្ញាតឱ្យអ្នកចែកបៀហៅកាតបន្ថែមទៀត។ <br><br>
+                ប្រសិនបើអ្នកចែកបៀទទួលបានតិចជាង 3 ពិន្ទុត្រូវបង្ខំឱ្យហៅកាតបន្ថែមទៀត (យោងទៅតាមច្បាប់) ។
+                បន្ទាប់ពីហ្គេមបានបញ្ចប់ ប្រព័ន្ធ Baccarat តាមអ៊ីនធឺណិតរបស់ AIA89 នឹងគណនាចំនួនការបាត់បង់ក្នុងពេលជាក់ស្តែងភ្លាមៗ។
+                ផ្នែក​ជម្រៅ យើង​នឹង​មាន​អត្ថបទ​បន្ថែម។ ដើម្បីបង្កើនចំណេះដឹងរបស់អ្នកលេងអំពីបាការ៉ាតតាមអ៊ីនធឺណិត និងអត្ថបទកាស៊ីណូអនឡាញផ្សេងៗដែលនៅជុំវិញពិភពលោកដែលពួកគេលេងត្រូវបានគេចាត់ទុកថាប្រើពេលទំនេររបស់ពួកគេដើម្បីរកប្រាក់បន្ថែម ហើយច្បាប់តែមួយគត់នៃហ្គេមនេះគឺកុំលោភលន់ ព្រោះបាការ៉ាតលំដាប់ពិភពលោក មេ Kerry Packer បាននិយាយថា “កុំលោភលន់ពេក ឬអ្នក”។ ll wind up with noting” បកប្រែជាភាសាថៃមានន័យថា “លោភលន់ និងលោភលន់”
+                គ្រាន់តែដឹងច្បាប់ នោះហើយជាវាអ្នកអាចលេងបាន។ Baccarat តាមអ៊ីនធឺណិតឥឡូវនេះ។ ដាក់ពាក្យថ្ងៃនេះ និងទទួលបានការបញ្ចុះតម្លៃជាមួយយើង។ ភ្លាមៗ មិនកំណត់ពេលវេលា តាមតំណខាងក្រោម គ្មានការរំខាន មិនចាំបាច់ទាក់ទងមជ្ឈមណ្ឌលហៅទូរស័ព្ទ។ យើងថែរក្សាអតិថិជនរបស់យើងបានល្អ។ ក្នុង​ករណី​ដែល​អតិថិជន​បន្ថែម Line នោះ​យើង​នឹង​អាច​មើល​ថែ​អ្នក​បាន​យ៉ាង​ហ្មត់ច
+            </p>
+        </div>
+
+
+
+
+        <!-- 
+            footer
+        -->
+        <footer class="bg-green-900">
+            <div class="main-box max-w-7xl m-auto py-2 grid grid-cols-12 gap-10">
+                <div class="col-span-4">
+                    <div class="logo w-56 m-auto">
+                        <a href="#">
+                            <img src="./img/logo/logo-1024x193.png" alt="" class="w-full">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <p class="text-md text-white text-center py-5">គេហទំព័រភ្នាល់អនឡាញ AIA89.com ជា វេបសាយភ្នាល់ហ្គេមអនឡាយល្អដាច់គេ ដែលមានហ្គេមជាច្រើនដូចជា មាន់ជល់ បាល់ទាត់ កីឡា បៀរផ្សាយផ្ទាល់ គីណូ ឡូតូ ខ្លានាគ បាញ់ត្រី ស្លុតម៉ាស៊ីន ត្រៀមខ្លួនរួចជាស្រេចក្នុងការផ្តល់ប្រឹក្សា និងពិគ្រោះយោបល់ 24 ម៉ោងក្នុងមួយថ្ងៃ</p>
+                    </div>
+                </div>
+                <div class="col-span-4">
+                    <div class="bank w-full inline-block mt-5">
+                        <a href="#">
+                            <div class="box w-1/4 float-left rounded">
+                                <img src="./img/bank/aba.png" alt="" class="w-16 m-auto rounded">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box w-1/4 float-left rounded">
+                                <img src="./img/bank/trumoney.png" alt="" class="w-16 m-auto rounded">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box w-1/4 float-left rounded">
+                                <img src="./img/bank/aceleda.png" alt="" class="w-16 m-auto rounded">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box w-1/4 float-left rounded">
+                                <img src="./img/bank/wing.png" alt="" class="w-16 m-auto rounded">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-4">
+                    <a href="#">
+                        <div class="btn-link flex items-center w-64 m-auto bg-blue-600 rounded-full p-3">
+                            <div class="w-full text-center text-4xl text-white">
+                                <i class="fab fa-telegram">&nbsp;</i>
+                                @AIA89
+                            </div>
+                        </div>
+                    </a>
+                    <img src="./img/border/123.png" alt="" class="w-64 m-auto my-5">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<!-- 
+        contact us
+    -->
+    <div class="contact w-56 fixed bottom-0 right-0 z-20">
+        <a href="http://t.me/aia89">
+            <img src="./img/contact/contact.png" alt="" class="w-full">
+        </a>
+    </div>
+    <!-- 
+        script link
+    -->
+    <script src="./js.js"></script>
+</body>
+</html>
